@@ -1,4 +1,51 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --bg-color: #000028;
+  --big-title-text-color: #DB00FF;
+  --accent-color: #FF0070;
+  --decor-color: var(--accent-color);
+  --shadow-color: var(--accent-color);
+  --text-color: #F1B2CE;
+  --text-title-decor-color: var(--bg-color);
+  --hover-border-color: rgba(255, 0, 112, 0.40);
+  --display-rec-decor: block;
+  --bg-image: url('../images/cover-image-dark.png');
+  --menu-margin-top: 1.5vh;
+  --title-margin-top: 5.39vh;
+  --header-description-margin-top: 3.89vh;
+  --decorated-zone-padding: 10px;
+  --rec-decor-top: 10px;
+  --rec-decor-right: 20px;
+  --main-row-gap: 50px;
+  --header-column-width: 30.73vw;
+  --decorated-zone-height: 100vh;
+  --main-font-size: 18px;
+  --font-weight-bold: 700;
+  --font-weight-normal: 400;
+  --decor-size: 25px;
+  --standard-gap: 10px;
+  --big-gap: 20px;
+  --font: 'IBM Plex mono';
+  --big-line-height: 130%;
+  --mid-line-height: 100%;
+  --small-line-height: 82.5%;
+}
+
+@media(width >= 768px) {
+  :root {
+    --menu-margin-top: 0.88vh;
+    --title-margin-top: 3.42vh;
+    --header-description-margin-top: 2.44vh;
+    --decorated-zone-padding: 20px;
+    --rec-decor-top: 20px;
+    --rec-decor-right: 30px;
+    --main-row-gap: 80px;
+  }
+}
+
+@media (width >= 1024px) or (height < 668px) {
+  :root {
+    --menu-margin-top: 0;
+    --title-margin-top: 24.09vh;
+    --header-description-margin-top: 3.26vh;
+  }
+}
