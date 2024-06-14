@@ -172,7 +172,7 @@
   line-height: var(--big-line-height);
 }
 
-.section-howto .section__list-item-header {
+.section-howto .section__list-item-header:not(h4) {
   margin-block-end: 20px;
 }
 
