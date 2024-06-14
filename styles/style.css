@@ -172,8 +172,11 @@
   line-height: var(--big-line-height);
 }
 
-.section-howto .section__list-item-header:not(h3) {
+.section-howto .section__list-item-header {
   margin-block-end: 20px;
+}
+
+.section-howto .section__list-item-header:not(h3) {
   font-weight: var(--font-weight-normal);
 }
 
@@ -321,7 +324,7 @@
   }
 
   .section-what .section__list {
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
   }
 
   .gallery .section__list {
